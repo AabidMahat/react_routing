@@ -36,7 +36,11 @@ This is a simple web application built using React, Vite, and Leaflet Routing Ma
 
 ## Folder Structure
 
-Certainly! Below is the README.md content in Markdown format:
+App
+    ├── map
+    │   ├── city
+    │   │   ├── cityItem
+    │   │   │   └── form
 
 markdown
 Copy code
