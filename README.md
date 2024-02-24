@@ -36,11 +36,16 @@ This is a simple web application built using React, Vite, and Leaflet Routing Ma
 
 ## Folder Structure
 
-App
-    ├── map
-    │   ├── city
-    │   │   ├── cityItem
-    │   │   │   └── form
+material-dashboard-react
+    ├── src
+    │   ├── App
+    │   │   ├── City
+    │   │   └── Form
+    │   │       ├── CityItem
+    │   │       ├── CityInfo
+    │   │       ├── Map
+  
+
 
 markdown
 Copy code
