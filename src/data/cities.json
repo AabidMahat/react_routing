@@ -1,0 +1,80 @@
+{
+  "cities": [
+    {
+      "cityName": "Pungliya Medical",
+      "country": "India",
+      "date": "2024-02-19T05:48:10.707Z",
+      "emoji": "💊",
+      "notes": "All types of Medicine Avaliable",
+      "position": {
+        "lat": "18.522636348262566",
+        "lng": "73.85085403919221"
+      },
+      "mapData": {
+        "distance": "1.34",
+        "time": {
+          "hours": 0,
+          "minutes": 3
+        }
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Moradabad",
+      "country": "India",
+      "date": "2024-02-19T05:49:27.586Z",
+      "emoji": "💊",
+      "notes": "",
+      "position": {
+        "lat": "28.729130483430154",
+        "lng": "78.96972656250001"
+      },
+      "mapData": {
+        "distance": "1609.97",
+        "time": {
+          "hours": 20,
+          "minutes": 6
+        }
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Manish Clinic",
+      "country": "India",
+      "date": "2024-02-24T12:21:13.660Z",
+      "emoji": "💊",
+      "notes": "All types of medicine avaliable",
+      "position": {
+        "lat": "18.519533535821004",
+        "lng": "73.85739838434421"
+      },
+      "mapData": {
+        "distance": "0.21",
+        "time": {
+          "hours": 0,
+          "minutes": 1
+        }
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Dr Todkar",
+      "country": "India",
+      "date": "2024-02-24T12:21:56.125Z",
+      "emoji": "💊",
+      "notes": "All type of medicine avaliable",
+      "position": {
+        "lat": "18.522911020750094",
+        "lng": "73.86395651313606"
+      },
+      "mapData": {
+        "distance": "0.92",
+        "time": {
+          "hours": 0,
+          "minutes": 2
+        }
+      },
+      "id": 4
+    }
+  ]
+}
