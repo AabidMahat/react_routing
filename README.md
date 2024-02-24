@@ -36,7 +36,7 @@ This is a simple web application built using React, Vite, and Leaflet Routing Ma
 
 ## Folder Structure
 
-material-dashboard-react
+
     ├── src
     │   ├── App
     │   │   ├── City
