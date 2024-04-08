@@ -8,14 +8,9 @@ function Sidebar() {
     <>
       <div className={styles.sidebar}>
         <Logo />
-        <AppNav />
+        {/* <AppNav /> */}
         {/* // ? it is used to display the children */}
         <Outlet />
-        <footer className={styles.footer}>
-          <p className={styles.copyright}>
-            &copy; Copyright {new Date().getFullYear()} by Medical Tracker Inc.
-          </p>
-        </footer>
       </div>
     </>
   );

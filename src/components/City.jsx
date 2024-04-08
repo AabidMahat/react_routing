@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import styles from "./City.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import Spinner from "./Spinner";
 import BackButton from "./BackButton";
+import supabase from "../services/supabase";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -24,8 +25,23 @@ function City() {
     },
     [id]
   );
+  const [imageUrl, setImageUrl] = useState([]);
+
+  useEffect(() => {
+    const fetchImage = async () => {
+      const { data } = await supabase.from("medical").select("*");
+      setImageUrl(data);
+    };
+    fetchImage();
+  }, []);
+
+  console.log(imageUrl);
 
   const { cityName, emoji, date, notes, mapData } = currentCity;
+
+  const currentImageUrl = imageUrl.find((item) =>
+    item.image.includes(cityName?.split(" ")[0])
+  )?.image;
   console.log("🚀 ~ file: City.jsx:29 ~ City ~ currentCity:", currentCity);
 
   return (
@@ -35,6 +51,12 @@ function City() {
       ) : (
         <div className={styles.city}>
           <div className={styles.row}>
+            <img
+              src={currentImageUrl}
+              style={{
+                height: "250px",
+              }}
+            />
             <h6>City name</h6>
             <div
               style={{

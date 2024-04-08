@@ -20,6 +20,8 @@ import "leaflet.awesome-markers/dist/leaflet.awesome-markers";
 import "leaflet-routing-machine";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 
+import MedicalData from "./MedicalData";
+
 function Map() {
   //! to read the query we use useSearchParams
 
@@ -102,7 +104,7 @@ function Map() {
 
       console.log(cities);
       const distance = (e.routes[0].summary.totalDistance / 1000).toFixed(2);
-      const totalTime = e.routes[0].summary.totalTime;
+      const totalTime = e.routes[0].summary.totalTime + 5 * 60 * 1000;
       const hours = totalTime / 3600;
       const minutes = Math.ceil((totalTime % 3600) / 60);
 
@@ -151,9 +153,7 @@ function Map() {
             eventHandlers={{
               click: (e) => HandleCityMarkerClick(city, e.target._map),
             }}>
-            <Popup>
-              {city.emoji} {city.cityName}
-            </Popup>
+            <Popup>{<MedicalData />}</Popup>
           </Marker>
         ))}
 

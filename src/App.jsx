@@ -9,6 +9,7 @@ import Form from "./components/Form";
 import CityList from "./components/CityList";
 import City from "./components/City";
 import { CityProvider } from "./contexts/CitiesContext";
+import MedicalData from "./components/MedicalData";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
         path: "form",
       },
     ],
+  },
+  {
+    element: <MedicalData />,
+    path: "medical",
   },
 ]);
 

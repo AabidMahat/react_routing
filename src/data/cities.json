@@ -1,80 +1,104 @@
 {
   "cities": [
     {
-      "cityName": "Pungliya Medical",
+      "cityName": "Akshay Medical",
       "country": "India",
-      "date": "2024-02-19T05:48:10.707Z",
+      "contact": "7559153594",
+      "date": "2024-03-30T09:42:58.989Z",
       "emoji": "💊",
-      "notes": "All types of Medicine Avaliable",
+      "notes": "All types of medicine avaliable \nOpen 9am-5pm",
       "position": {
-        "lat": "18.522636348262566",
-        "lng": "73.85085403919221"
+        "lat": "18.52125909118356",
+        "lng": "73.85569281109646"
       },
       "mapData": {
-        "distance": "1.34",
+        "distance": "0.57",
         "time": {
-          "hours": 0,
-          "minutes": 3
+          "hours": 83,
+          "minutes": 22
         }
       },
       "id": 1
     },
     {
-      "cityName": "Moradabad",
+      "cityName": "Ganga Medical",
       "country": "India",
-      "date": "2024-02-19T05:49:27.586Z",
+      "contact": "9860053847",
+      "date": "2024-03-30T09:45:18.182Z",
       "emoji": "💊",
-      "notes": "",
+      "notes": "All types of Medicine avaliable here\nOpen 24/7\nInstant Service avaliable",
       "position": {
-        "lat": "28.729130483430154",
-        "lng": "78.96972656250001"
+        "lat": "18.516777088195862",
+        "lng": "73.85952903829156"
       },
       "mapData": {
-        "distance": "1609.97",
+        "distance": "232.77",
         "time": {
-          "hours": 20,
-          "minutes": 6
+          "hours": 3,
+          "minutes": 20
         }
       },
       "id": 2
     },
     {
-      "cityName": "Manish Clinic",
+      "cityName": "LifeLine Medical",
       "country": "India",
-      "date": "2024-02-24T12:21:13.660Z",
+      "contact": "9527773794",
+      "date": "2024-03-30T09:46:14.380Z",
       "emoji": "💊",
-      "notes": "All types of medicine avaliable",
+      "notes": "All types of medicine avaliable.\nHome delievery is avaliable .\nOpen 24/7",
       "position": {
-        "lat": "18.519533535821004",
-        "lng": "73.85739838434421"
+        "lat": "18.519485853945834",
+        "lng": "73.86205035806148"
       },
       "mapData": {
-        "distance": "0.21",
+        "distance": "1.01",
         "time": {
-          "hours": 0,
-          "minutes": 1
+          "hours": 83,
+          "minutes": 22
         }
       },
       "id": 3
     },
     {
-      "cityName": "Dr Todkar",
+      "cityName": "Wellness Medical",
       "country": "India",
-      "date": "2024-02-24T12:21:56.125Z",
+      "contact": "7722034342",
+      "date": "2024-03-30T09:48:10.684Z",
       "emoji": "💊",
-      "notes": "All type of medicine avaliable",
+      "notes": "All types of medicine avaliable \nOpen 9am-5pm \nFast service",
       "position": {
-        "lat": "18.522911020750094",
-        "lng": "73.86395651313606"
+        "lat": "18.519558173089973",
+        "lng": "73.85741544237575"
       },
       "mapData": {
-        "distance": "0.92",
+        "distance": "0.20",
         "time": {
           "hours": 0,
-          "minutes": 2
+          "minutes": 1
         }
       },
       "id": 4
+    },
+    {
+      "cityName": "family Farmacy",
+      "country": "India",
+      "contact": "7028868733",
+      "date": "2024-03-30T09:58:12.363Z",
+      "emoji": "💊",
+      "notes": "All types of medicine avaliable",
+      "position": {
+        "lat": "18.51834727929954",
+        "lng": "73.8513426019967"
+      },
+      "mapData": {
+        "distance": "230.41",
+        "time": {
+          "hours": 3,
+          "minutes": 18
+        }
+      },
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,3 @@
-// "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
-
 import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
@@ -14,13 +12,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useCities } from "../contexts/CitiesContext";
 
-export function convertToEmoji(countryCode) {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt());
-  return String.fromCodePoint(...codePoints);
-}
+import supabase, { SUPABASE_URL } from "../services/supabase";
 
 function Form() {
   const navigate = useNavigate();
@@ -30,6 +22,7 @@ function Form() {
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
+  const [contact, setContact] = useState("");
   const [isLoadingGeoCoding, setIsLoadingGeocoding] = useState(false);
   const [geoCodingError, setGeoCodingError] = useState("");
 
@@ -49,7 +42,7 @@ function Form() {
 
         if (!data.countryCode)
           throw new Error(
-            "Thats doesn't seems to be a city. Click somewhere else "
+            "That doesn't seem to be a city. Click somewhere else "
           );
 
         setCityName(data.city || data.locality || "");
@@ -63,7 +56,22 @@ function Form() {
     fetchCity();
   }, [lat, lng]);
 
-  async function handleSubmit(e) {
+  const uploadImage = async (e) => {
+    let files = e.target.files[0];
+
+    const imageName = `${Math.random()}-${files.name}`.replaceAll("/", "");
+    const imagePath = `${SUPABASE_URL}/storage/v1/object/public/Medical/${imageName}`;
+
+    await supabase
+      .from("medical")
+      .insert([{ image: imagePath }])
+      .select();
+
+    // https://wwrjpeselhicsjvdtjyz.supabase.co/storage/v1/object/public/Medical/0.8720178515115453-aaaaa.jpg
+    await supabase.storage.from("Medical").upload(imageName, files);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!cityName || !date) return;
@@ -71,6 +79,7 @@ function Form() {
     const newCity = {
       cityName,
       country,
+      contact,
       date,
       emoji: "💊",
       notes,
@@ -80,7 +89,7 @@ function Form() {
 
     await createCity(newCity);
     navigate("/app");
-  }
+  };
 
   if (isLoadingGeoCoding) return <Spinner />;
 
@@ -88,7 +97,7 @@ function Form() {
     return (
       <>
         <Message message="Start By Clicking on Map" />
-        <Toastify type="success" msg="Start Bu Clicking on Map" />
+        <Toastify type="success" msg="Start By Clicking on Map" />
       </>
     );
 
@@ -105,7 +114,7 @@ function Form() {
       className={`${styles.form} ${isLoading ? styles.loading : ""}`}
       onSubmit={handleSubmit}>
       <div className={styles.row}>
-        <label htmlFor="cityName">City name</label>
+        <label htmlFor="cityName">Medical name</label>
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
@@ -113,24 +122,34 @@ function Form() {
         />
         <span className={styles.flag}>🏥</span>
       </div>
-
       <div className={styles.row}>
-        <label htmlFor="date">When did you go to {cityName}?</label>
+        <label htmlFor="phoneNo">Phone No</label>
+        <input
+          id="phoneNo"
+          onChange={(e) => setContact(e.target.value)} // Corrected the function name
+          value={contact}
+        />
+      </div>
+      {/* <div className={styles.row}>
+        <label htmlFor="date">{cityName} Available from 9:00 to </label>
         <DatePicker
           id="date"
           onChange={(date) => setDate(date)}
           selected={date}
           dateFormat="dd/MM/yyyy"
         />
-      </div>
-
+      </div> */}
       <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to {cityName}</label>
+        <label htmlFor="notes">Summary About Medical {cityName}</label>
         <textarea
           id="notes"
           onChange={(e) => setNotes(e.target.value)}
           value={notes}
         />
+      </div>
+      <div className={styles.row}>
+        <label htmlFor="notes">Upload the image {cityName}</label>
+        <input type="file" onChange={uploadImage} />
       </div>
 
       <div className={styles.buttons}>
