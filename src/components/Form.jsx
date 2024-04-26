@@ -119,6 +119,7 @@ function Form() {
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
+          style={{ color: "black" }}
         />
         <span className={styles.flag}>🏥</span>
       </div>
@@ -128,6 +129,7 @@ function Form() {
           id="phoneNo"
           onChange={(e) => setContact(e.target.value)} // Corrected the function name
           value={contact}
+          style={{ color: "black" }}
         />
       </div>
       {/* <div className={styles.row}>
@@ -145,6 +147,7 @@ function Form() {
           id="notes"
           onChange={(e) => setNotes(e.target.value)}
           value={notes}
+          style={{ color: "black" }}
         />
       </div>
       <div className={styles.row}>

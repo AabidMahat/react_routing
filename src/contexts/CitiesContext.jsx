@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const CitiesContext = createContext();
 
@@ -10,6 +11,7 @@ const initialState = {
   currentCity: {},
   error: "",
   mapData: {},
+  medicals: [],
 };
 
 function reducer(state, action) {
@@ -45,14 +47,19 @@ function reducer(state, action) {
     case "map/clicked":
       return { ...state, mapData: action.payload };
 
+    case "medicals":
+      return { ...state, medicals: action.payload };
+
     case "rejected":
       return { ...state, isLoading: false, error: action.payload };
   }
 }
 
 function CityProvider({ children }) {
-  const [{ cities, isLoading, currentCity, error, mapData }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { cities, isLoading, currentCity, error, mapData, medicals },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   useEffect(() => {
     async function fetchData() {
@@ -132,6 +139,10 @@ function CityProvider({ children }) {
     dispatch({ type: "map/clicked", payload: mapData });
   }
 
+  function getMedicalData(data) {
+    dispatch({ type: "medicals", payload: data });
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -139,11 +150,13 @@ function CityProvider({ children }) {
         isLoading,
         currentCity,
         mapData,
+        medicals,
         error,
         getCity,
         createCity,
         updateCity,
         getMapData,
+        getMedicalData,
       }}>
       {children}
     </CitiesContext.Provider>

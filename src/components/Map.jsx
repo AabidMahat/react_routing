@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Spinner from "./Spinner";
 import styles from "./Map.module.css";
 import {
@@ -33,7 +33,9 @@ function Map() {
 
   const [userPosition, setUserPosition] = useState(null);
   const [routingControl, setRoutingControl] = useState(null);
+  const [medicals, setMedicals] = useState(null);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
   const {
     isLoading: isLoadingPosition,
@@ -54,7 +56,15 @@ function Map() {
     }
   }, [geoLocationPosition]);
 
+  useEffect(() => {
+    const medicalsQueryParam = searchParams.get("medical");
+    const medi = JSON.parse(decodeURIComponent(medicalsQueryParam));
+    setMedicals(medi);
+  }, [searchParams]);
+
   // @ Selected City
+
+  console.log(medicals);
 
   // ! For routing
   const HandleCityMarkerClick = (city, map) => {
@@ -102,9 +112,9 @@ function Map() {
     control.on("routesfound", async (e) => {
       setRouteLoading(false);
 
-      console.log(cities);
       const distance = (e.routes[0].summary.totalDistance / 1000).toFixed(2);
-      const totalTime = e.routes[0].summary.totalTime + 5 * 60 * 1000;
+      const totalTime = e.routes[0].summary.totalTime + 5 * 60;
+      console.log(e.routes[0].summary.totalTime);
       const hours = totalTime / 3600;
       const minutes = Math.ceil((totalTime % 3600) / 60);
 
@@ -141,21 +151,37 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
-        {cities.map((city) => (
-          <Marker
-            position={[city.position.lat, city.position.lng]}
-            key={city.id}
-            icon={L.AwesomeMarkers.icon({
-              icon: "star",
-              prefix: "fa",
-              markerColor: "green",
-            })}
-            eventHandlers={{
-              click: (e) => HandleCityMarkerClick(city, e.target._map),
-            }}>
-            <Popup>{<MedicalData />}</Popup>
-          </Marker>
-        ))}
+        {medicals
+          ? medicals.map((city) => (
+              <Marker
+                position={[city.position.lat, city.position.lng]}
+                key={city.id}
+                icon={L.AwesomeMarkers.icon({
+                  icon: "star",
+                  prefix: "fa",
+                  markerColor: "green",
+                })}
+                eventHandlers={{
+                  click: (e) => HandleCityMarkerClick(city, e.target._map),
+                }}>
+                <Popup>{<MedicalData />}</Popup>
+              </Marker>
+            ))
+          : cities.map((city) => (
+              <Marker
+                position={[city.position.lat, city.position.lng]}
+                key={city.id}
+                icon={L.AwesomeMarkers.icon({
+                  icon: "star",
+                  prefix: "fa",
+                  markerColor: "green",
+                })}
+                eventHandlers={{
+                  click: (e) => HandleCityMarkerClick(city, e.target._map),
+                }}>
+                <Popup>{<MedicalData />}</Popup>
+              </Marker>
+            ))}
 
         {userPosition && (
           <Marker
@@ -169,7 +195,7 @@ function Map() {
           </Marker>
         )}
         <ChnageCenter position={mapPosition} />
-        <DetectClick />
+        <DetectClick medicals={medicals} />
       </MapContainer>
     </div>
   );
@@ -181,11 +207,14 @@ function ChnageCenter({ position }) {
   return null;
 }
 
-function DetectClick() {
+function DetectClick({ medicals }) {
   const navigate = useNavigate();
 
   useMapEvents({
-    click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+    click: (e) =>
+      navigate(
+        `form?lat=${e.latlng.lat}&lng=${e.latlng.lng}&medicals=${medicals}`
+      ),
   });
 }
 

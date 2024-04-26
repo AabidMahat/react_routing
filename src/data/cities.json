@@ -12,10 +12,10 @@
         "lng": "73.85569281109646"
       },
       "mapData": {
-        "distance": "0.57",
+        "distance": "234.75",
         "time": {
-          "hours": 83,
-          "minutes": 22
+          "hours": 86,
+          "minutes": 42
         }
       },
       "id": 1
@@ -52,10 +52,10 @@
         "lng": "73.86205035806148"
       },
       "mapData": {
-        "distance": "1.01",
+        "distance": "235.34",
         "time": {
-          "hours": 83,
-          "minutes": 22
+          "hours": 86,
+          "minutes": 43
         }
       },
       "id": 3
@@ -72,10 +72,10 @@
         "lng": "73.85741544237575"
       },
       "mapData": {
-        "distance": "0.20",
+        "distance": "233.02",
         "time": {
-          "hours": 0,
-          "minutes": 1
+          "hours": 86,
+          "minutes": 41
         }
       },
       "id": 4
@@ -92,13 +92,573 @@
         "lng": "73.8513426019967"
       },
       "mapData": {
-        "distance": "230.41",
+        "distance": "233.52",
         "time": {
-          "hours": 3,
-          "minutes": 18
+          "hours": 86,
+          "minutes": 40
         }
       },
       "id": 5
+    },
+    {
+      "cityName": "Aamruth Medical",
+      "country": "India",
+      "contact": "45454545",
+      "date": "2024-04-19T10:32:25.604Z",
+      "emoji": "💊",
+      "notes": "rferfee",
+      "position": {
+        "lat": "16.676517953264895",
+        "lng": "74.08836364746095"
+      },
+      "mapData": {
+        "distance": "27.35",
+        "time": {
+          "hours": 0,
+          "minutes": 34
+        }
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Laxmi Medical",
+      "country": "India",
+      "contact": "7890123456",
+      "date": "2024-04-21T10:10:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 9am-9pm.",
+      "position": {
+        "lat": "28.7041",
+        "lng": "77.1025"
+      },
+      "mapData": {
+        "distance": "50.0",
+        "time": {
+          "hours": 5,
+          "minutes": 30
+        }
+      },
+      "id": 7
+    },
+    {
+      "cityName": "Pharmacy Store",
+      "country": "India",
+      "contact": "7890654321",
+      "date": "2024-04-21T10:20:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Home delivery available.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "20.0",
+        "time": {
+          "hours": 2,
+          "minutes": 30
+        }
+      },
+      "id": 8
+    },
+    {
+      "cityName": "Pranjali Medical",
+      "country": "India",
+      "contact": "7890432109",
+      "date": "2024-04-21T10:30:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "12.9716",
+        "lng": "77.5946"
+      },
+      "mapData": {
+        "distance": "30.0",
+        "time": {
+          "hours": 3,
+          "minutes": 30
+        }
+      },
+      "id": 9
+    },
+    {
+      "cityName": "Pridiyos Balalji Medical",
+      "country": "India",
+      "contact": "7890789012",
+      "date": "2024-04-21T10:40:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 10am-8pm.",
+      "position": {
+        "lat": "25.5941",
+        "lng": "85.1376"
+      },
+      "mapData": {
+        "distance": "40.0",
+        "time": {
+          "hours": 4,
+          "minutes": 0
+        }
+      },
+      "id": 10
+    },
+    {
+      "cityName": "Rajasthan Medical",
+      "country": "India",
+      "contact": "7890901234",
+      "date": "2024-04-21T10:50:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 24/7.",
+      "position": {
+        "lat": "17.3850",
+        "lng": "78.4867"
+      },
+      "mapData": {
+        "distance": "555.97",
+        "time": {
+          "hours": 90,
+          "minutes": 4
+        }
+      },
+      "id": 11
+    },
+    {
+      "cityName": "Royal Medical",
+      "country": "India",
+      "contact": "7890990123",
+      "date": "2024-04-21T11:00:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-9pm.",
+      "position": {
+        "lat": "26.9124",
+        "lng": "75.7873"
+      },
+      "mapData": {
+        "distance": "25.0",
+        "time": {
+          "hours": 2,
+          "minutes": 45
+        }
+      },
+      "id": 12
+    },
+    {
+      "cityName": "Sanjeevani Medical",
+      "country": "India",
+      "contact": "7890109890",
+      "date": "2024-04-21T11:10:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "13.0827",
+        "lng": "80.2707"
+      },
+      "mapData": {
+        "distance": "35.0",
+        "time": {
+          "hours": 3,
+          "minutes": 15
+        }
+      },
+      "id": 13
+    },
+    {
+      "cityName": "Satnam Medical",
+      "country": "India",
+      "contact": "7890123098",
+      "date": "2024-04-21T11:20:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 10am-8pm.",
+      "position": {
+        "lat": "22.7196",
+        "lng": "75.8577"
+      },
+      "mapData": {
+        "distance": "45.0",
+        "time": {
+          "hours": 4,
+          "minutes": 30
+        }
+      },
+      "id": 14
+    },
+    {
+      "cityName": "Shree Medical",
+      "country": "India",
+      "contact": "7890890123",
+      "date": "2024-04-21T11:30:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-10pm.",
+      "position": {
+        "lat": "19.2183",
+        "lng": "72.9781"
+      },
+      "mapData": {
+        "distance": "5.0",
+        "time": {
+          "hours": 0,
+          "minutes": 45
+        }
+      },
+      "id": 15
+    },
+    {
+      "cityName": "Shriram Medical",
+      "country": "India",
+      "contact": "7890129870",
+      "date": "2024-04-21T11:40:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "10.0",
+        "time": {
+          "hours": 1,
+          "minutes": 15
+        }
+      },
+      "id": 16
+    },
+    {
+      "cityName": "Suresh Medical",
+      "country": "India",
+      "contact": "7890901234",
+      "date": "2024-04-21T11:50:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 9am-9pm.",
+      "position": {
+        "lat": "28.6139",
+        "lng": "77.2090"
+      },
+      "mapData": {
+        "distance": "30.0",
+        "time": {
+          "hours": 3,
+          "minutes": 0
+        }
+      },
+      "id": 17
+    },
+    {
+      "cityName": "Vaibhav Medical",
+      "country": "India",
+      "contact": "7890123456",
+      "date": "2024-04-21T12:00:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 24/7.",
+      "position": {
+        "lat": "12.9716",
+        "lng": "77.5946"
+      },
+      "mapData": {
+        "distance": "20.0",
+        "time": {
+          "hours": 2,
+          "minutes": 15
+        }
+      },
+      "id": 18
+    },
+    {
+      "cityName": "Arogya Medical",
+      "country": "India",
+      "contact": "7890654321",
+      "date": "2024-04-21T12:10:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "15.0",
+        "time": {
+          "hours": 1,
+          "minutes": 45
+        }
+      },
+      "id": 19
+    },
+    {
+      "cityName": "Avinash Medical",
+      "country": "India",
+      "contact": "7890789012",
+      "date": "2024-04-21T12:20:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-8pm.",
+      "position": {
+        "lat": "22.7196",
+        "lng": "75.8577"
+      },
+      "mapData": {
+        "distance": "812.47",
+        "time": {
+          "hours": 10,
+          "minutes": 12
+        }
+      },
+      "id": 20
+    },
+    {
+      "cityName": "Das Medical",
+      "country": "India",
+      "contact": "7890654321",
+      "date": "2024-04-21T12:30:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "28.7041",
+        "lng": "77.1025"
+      },
+      "mapData": {
+        "distance": "30.0",
+        "time": {
+          "hours": 3,
+          "minutes": 0
+        }
+      },
+      "id": 21
+    },
+    {
+      "cityName": "Dev Medical",
+      "country": "India",
+      "contact": "7890432109",
+      "date": "2024-04-21T12:40:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 10am-9pm.",
+      "position": {
+        "lat": "19.2183",
+        "lng": "72.9781"
+      },
+      "mapData": {
+        "distance": "400.17",
+        "time": {
+          "hours": 5,
+          "minutes": 17
+        }
+      },
+      "id": 22
+    },
+    {
+      "cityName": "Digambar Medical",
+      "country": "India",
+      "contact": "7890123098",
+      "date": "2024-04-21T12:50:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-10pm.",
+      "position": {
+        "lat": "25.5941",
+        "lng": "85.1376"
+      },
+      "mapData": {
+        "distance": "1812.76",
+        "time": {
+          "hours": 105,
+          "minutes": 14
+        }
+      },
+      "id": 23
+    },
+    {
+      "cityName": "Hanumant Medical",
+      "country": "India",
+      "contact": "7890890123",
+      "date": "2024-04-21T13:00:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 24/7.",
+      "position": {
+        "lat": "13.0827",
+        "lng": "80.2707"
+      },
+      "mapData": {
+        "distance": "921.67",
+        "time": {
+          "hours": 94,
+          "minutes": 33
+        }
+      },
+      "id": 24
+    },
+    {
+      "cityName": "Jay Medical",
+      "country": "India",
+      "contact": "7890123456",
+      "date": "2024-04-21T13:10:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "12.9716",
+        "lng": "77.5946"
+      },
+      "mapData": {
+        "distance": "608.19",
+        "time": {
+          "hours": 90,
+          "minutes": 52
+        }
+      },
+      "id": 25
+    },
+    {
+      "cityName": "Kedar Medical",
+      "country": "India",
+      "contact": "7890123456",
+      "date": "2024-04-21T13:10:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "13.9716",
+        "lng": "77.6046"
+      },
+      "mapData": {
+        "distance": "594.68",
+        "time": {
+          "hours": 90,
+          "minutes": 38
+        }
+      },
+      "id": 26
+    },
+    {
+      "cityName": "Komal Medical",
+      "country": "India",
+      "contact": "7890654321",
+      "date": "2024-04-21T13:20:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "28.6139",
+        "lng": "77.2090"
+      },
+      "mapData": {
+        "distance": "30.0",
+        "time": {
+          "hours": 3,
+          "minutes": 0
+        }
+      },
+      "id": 27
+    },
+    {
+      "cityName": "Kusum Medical",
+      "country": "India",
+      "contact": "7890129870",
+      "date": "2024-04-21T13:30:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-8pm.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "10.0",
+        "time": {
+          "hours": 1,
+          "minutes": 15
+        }
+      },
+      "id": 28
+    },
+    {
+      "cityName": "Mahadeep Medical",
+      "country": "India",
+      "contact": "7890901234",
+      "date": "2024-04-21T13:40:00.000Z",
+      "emoji": "💊",
+      "notes": "Comprehensive range of medicines. Open 9am-9pm.",
+      "position": {
+        "lat": "17.3850",
+        "lng": "78.4867"
+      },
+      "mapData": {
+        "distance": "555.31",
+        "time": {
+          "hours": 90,
+          "minutes": 6
+        }
+      },
+      "id": 29
+    },
+    {
+      "cityName": "Mahesh Medical",
+      "country": "India",
+      "contact": "7890990123",
+      "date": "2024-04-21T13:50:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 10am-9pm.",
+      "position": {
+        "lat": "26.9124",
+        "lng": "75.7873"
+      },
+      "mapData": {
+        "distance": "25.0",
+        "time": {
+          "hours": 2,
+          "minutes": 45
+        }
+      },
+      "id": 30
+    },
+    {
+      "cityName": "Metro Medical",
+      "country": "India",
+      "contact": "7890109890",
+      "date": "2024-04-21T14:00:00.000Z",
+      "emoji": "💊",
+      "notes": "Emergency service available. Open 24/7.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "10.0",
+        "time": {
+          "hours": 1,
+          "minutes": 15
+        }
+      },
+      "id": 31
+    },
+    {
+      "cityName": "Pancheshwar Medical",
+      "country": "India",
+      "contact": "7890129870",
+      "date": "2024-04-21T15:10:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-8pm.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "10.0",
+        "time": {
+          "hours": 1,
+          "minutes": 15
+        }
+      },
+      "id": 32
+    },
+    {
+      "cityName": "Patel Medical",
+      "country": "India",
+      "contact": "7890129870",
+      "date": "2024-04-21T15:10:00.000Z",
+      "emoji": "💊",
+      "notes": "All types of medicine available. Open 9am-8pm.",
+      "position": {
+        "lat": "22.5726",
+        "lng": "88.3639"
+      },
+      "mapData": {
+        "distance": "10.0",
+        "time": {
+          "hours": 1,
+          "minutes": 15
+        }
+      },
+      "id": 32
     }
   ]
 }
